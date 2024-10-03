@@ -22,4 +22,8 @@ export class ProdutoPrisma {
         const produto = await this.prisma.produto.findUnique({where: {id}});
         return (produto as any) ?? null;
     }
+
+    async excluir(id: number): Promise<void> {
+        await this.prisma.produto.delete({where: { id}})
+    }
 }

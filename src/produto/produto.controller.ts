@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Param, Post } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, Post } from '@nestjs/common';
 import { Produto } from 'src/core';
 import { ProdutoPrisma } from './produto.prisma';
 
@@ -20,5 +20,10 @@ export class ProdutoController {
     @Get(':id')
     async obterProdutoPorId(@Param('id') id: string): Promise<Produto | null> {
         return this.repo.obterPorId(+id);
+    }
+
+    @Delete(':id')
+    async excluirProduto(@Param('id') id: string): Promise<void> {
+        return this.repo.excluir(+id);
     }
 }

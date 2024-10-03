@@ -1,32 +1,33 @@
 GET http://localhost:4000/produtos
 
 ###
-
 GET http://localhost:4000/produtos/29
+
+###
+DELETE http://localhost:4000/produtos/28
 
 ###
 POST http://localhost:4000/produtos
 Content-Type: application/json
 
 {
-    "nome": "Galaxy S24 Ultra",
-    "descricao": "Samsung Galaxy S24 Ultra é um smartphone top de linha com câmera de 108 MP",
-    "marca": "Samsung",
-    "modelo": "Galaxy S24",
-    "imagem": "https://samsungbrshop.vtexassets.com/arquivos/ids/228347/1---_S767B~1.png",
-    "nota": 4.8,
-    "videoReview": "https://www.youtube.com/watch?v=XaqOejIaFgM",
-    "tags": ["smartphone", "celular"],
-    "precoBase": 3000.00,
-    "precoPromocional": 2500.00,
-    "menorPreco": 2000.00,
-    "maiorPreco": 4000.00,
-    "precoMedio": 3000.00,
+    "nome": "Sony PlayStation 5 Slim",
+    "descricao": "O PlayStation 5 Slim oferece gráficos de nova geração com suporte a Ray Tracing, tempos de carregamento rápidos com seu SSD customizado e jogos exclusivos que definem a plataforma.",
+    "marca": "Sony",
+    "modelo": "CFI-1015A",
+    "imagem": "https://firebasestorage.googleapis.com/v0/b/formacao-dev.appspot.com/o/lancamentos%2Fgam3rstore%2Fps5-slim.png?alt=media&token=ed2ca61f-61c6-46bf-bc75-b4155132ca97",
+    "nota": 4.9,
+    "videoReview": "https://www.youtube.com/embed/bMFC-TM-t5E",
+    "tags": ["Nova Geração", "Ray Tracing", "Exclusivos"],
+    "precoBase": 3999.99,
+    "precoPromocional": 3499.99,
+    "menorPreco": 2999.99,
+    "maiorPreco": 5999.99,
+    "precoMedio": 3899.99,
     "especificacoes": {
-        "Tela": "6.2 polegadas",
-        "Memória": "8 GB",
-        "Armazenamento": "128 GB",
-        "Câmera": "12 MP",
-        "Bateria": "4000 mAh"
+        "destaque": "SSD Customizado",
+        "CPU": "AMD Ryzen Zen 2 8 núcleos",
+        "Armazenamento": "1TB SSD",
+        "peso": "4.05 kg"
     }
 }
