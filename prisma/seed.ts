@@ -1,5 +1,5 @@
 import { PrismaClient } from "@prisma/client";
-import { produtos } from "../src/core";
+import { produtos } from "@gstore/core";
 
 const prisma = new PrismaClient();
 
